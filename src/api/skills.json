@@ -1,0 +1,26 @@
+[
+{"type":"header","version":"5.2.0","comment":"Export to JSON plugin for PHPMyAdmin"},
+{"type":"database","name":"example_app"},
+{"type":"table","name":"skills","database":"example_app","data":
+[
+{"id":"1","title":"HTML","image":"skills\/pXWIakjwfqmYz2Z2BD62RPvp8gzIb7xLcuMdXYLM.png","created_at":"2023-04-14 19:38:32","updated_at":"2023-04-14 23:35:15"},
+{"id":"2","title":"CSS","image":"skills\/CT8sGOivEy2MnSr310A9F8z12QegLxTL8No7QUFg.png","created_at":"2023-04-14 19:38:32","updated_at":"2023-04-14 23:35:31"},
+{"id":"3","title":"JavaScript","image":"skills\/SLuyNjgw1NPqCef6UK2AxbzMZPvUr8oCPEBwHGqU.png","created_at":"2023-04-14 19:38:32","updated_at":"2023-04-14 23:35:49"},
+{"id":"4","title":"SQL","image":"skills\/HPiuKB3oMX8PMT2HTJK3kVpsZHyl6CzkNIXUdxx0.png","created_at":"2023-04-14 19:40:55","updated_at":"2023-04-14 23:36:07"},
+{"id":"5","title":"Asp.net","image":"skills\/Fyc18p6NCLKLC401oDyB6kYYSK874hb6z6reEicB.png","created_at":"2023-04-14 23:31:04","updated_at":"2023-04-14 23:36:18"},
+{"id":"6","title":"NodeJS","image":"skills\/qlnEPub960JC07eHztCxfiJOaicq3B0OwssV40Zg.png","created_at":"2023-04-14 23:31:59","updated_at":"2023-04-14 23:38:26"},
+{"id":"7","title":"ReactJS","image":"skills\/AzWPD1SEq6OFmYv8olpwsCMol4B1KrRDdKMcPs6q.png","created_at":"2023-04-14 23:32:06","updated_at":"2023-04-14 23:40:14"},
+{"id":"8","title":"MongoDB","image":"skills\/E9tRLpm4ViGJF8PRktuvUzycfYxc4dpwDhXh0hoi.png","created_at":"2023-04-14 23:32:21","updated_at":"2023-04-14 23:42:26"},
+{"id":"9","title":"Pug","image":"skills\/O2obj7Zj9SUhK0drfGPMEcfOF4Qu38yFJDrFJYJ0.jpg","created_at":"2023-04-14 23:32:27","updated_at":"2023-04-14 23:54:30"},
+{"id":"10","title":"EJS","image":"skills\/nGP0ci3NN4If09uMi6VRXxPTLj9oyaMV6WHnOzVe.jpg","created_at":"2023-04-14 23:32:32","updated_at":"2023-04-14 23:56:25"},
+{"id":"11","title":"PHP","image":"skills\/JQfWlL81sEGaPyXSItdjdAAE2gtPB2pTkyuUKJRC.png","created_at":"2023-04-14 23:32:42","updated_at":"2023-04-14 23:47:16"},
+{"id":"12","title":"Laravel","image":"skills\/cwzXM8sSXXfJMx7gBbyRnU9bdxSEluh9egTNYNyJ.png","created_at":"2023-04-14 23:32:50","updated_at":"2023-04-14 23:57:44"},
+{"id":"13","title":"BootStrap","image":"skills\/HPYcNidx57ZC0JUOPOLqINtu2rBphJNCFdHC8rTb.png","created_at":"2023-04-14 23:32:58","updated_at":"2023-04-15 00:01:11"},
+{"id":"14","title":"ExpressJS","image":"skills\/sxCdkv3zMXv9Ph5vsknsIjwS6wjP1XZQwB9dWdQy.jpg","created_at":"2023-04-14 23:34:33","updated_at":"2023-04-15 00:00:12"},
+{"id":"15","title":"Figma","image":"skills\/dM9rDdywZgQewzZe63ch7zTIKWBMJQsUM9712Cpy.png","created_at":"2023-04-15 00:01:57","updated_at":"2023-04-15 00:02:45"},
+{"id":"16","title":"AdobeXD","image":"skills\/cvsLl6U4iHY4Wu3dLws6z8wNoGJdWWaHu3msHPDG.png","created_at":"2023-04-15 00:02:56","updated_at":"2023-04-15 00:03:12"},
+{"id":"17","title":"TypeScript","image":"skills\/vOPnkNAcE4zshg9VrszValyCiFTJy9A8PTr8jg2w.png","created_at":"2023-04-15 00:04:24","updated_at":"2023-04-15 00:05:54"},
+{"id":"18","title":"Scrum","image":"skills\/VCoXfDYlUu7xZolXZQhH6p0TYuJoLqjmdW1FmkFm.jpg","created_at":"2023-04-15 00:06:47","updated_at":"2023-04-15 00:08:57"}
+]
+}
+]

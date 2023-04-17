@@ -1,0 +1,63 @@
+[
+  {
+    "type": "header",
+    "version": "5.2.0",
+    "comment": "Export to JSON plugin for PHPMyAdmin"
+  },
+  { "type": "database", "name": "example_app" },
+  {
+    "type": "table",
+    "name": "projects",
+    "database": "example_app",
+    "data": [
+      {
+        "id": "1",
+        "title": "Type-A-thon",
+        "live": "https://manali1321.github.io/Type-A-Thon/",
+        "source": "https://github.com/Manali1321/Type-A-Thon",
+        "slug": "ClickToSeeTypeAThonWebsite",
+        "image": "projects/rlGUbMEXVfvKwVuZ1ckNeXxVnbylUl9ays5VOIQO.png",
+        "content": "I designed and developed a web game using HTML, CSS, and JavaScript that features falling random letters. Players must press the corresponding key on their keyboard to advance through the levels. The project highlights my skills in front-end web development and my ability to create engaging user experiences.",
+        "user_id": "2",
+        "created_at": "2023-04-14 19:38:32",
+        "updated_at": "2023-04-15 04:40:52"
+      },
+      {
+        "id": "2",
+        "title": "EasyPlan",
+        "live": "https://manali1321.github.io/JS-pet-project/",
+        "source": "https://github.com/Manali1321/JS-pet-project",
+        "slug": "ClickToSeeEasyPlanWebsite",
+        "image": "projects/M8bi3tg4YNvVDh3fNF7ZXF7lQyMCZD8e36TAVKak.jpg",
+        "content": "This project showcases my skills in HTML, CSS and JavaScript by creating a web application that allows users to create their own travel itineraries. Users can select the province they want to visit and filter the results by categories such as attractions, activities, food and accommodation. The data for the provinces and categories is hard-coded using an array of objects.",
+        "user_id": "1",
+        "created_at": "2023-04-14 19:38:32",
+        "updated_at": "2023-04-15 04:40:29"
+      },
+      {
+        "id": "7",
+        "title": "Mehdi Art House",
+        "live": "https://mehdi-art-4jzc.onrender.com/",
+        "source": "https://github.com/Manali1321/Mehdi_art",
+        "slug": "ClickToSeeMehdiArtWebsite",
+        "image": "projects/nONkyO9h5WnXrQ0vt6vRjaSWdxWSUawac8qQdhIl.png",
+        "content": "This project demonstrates my skills in Node.js, Pug and MongoDB by creating a web application that connects talented artists with art lovers. Users can browse a diverse collection of stunning art pieces and contact the artists directly. Users can also create their own profiles, upload their artworks. The web application uses MongoDB to store the user and art data, Pug to render the dynamic web pages, and Node.js to handle the server-side logic.",
+        "user_id": "1",
+        "created_at": "2023-04-15 04:40:05",
+        "updated_at": "2023-04-15 04:41:24"
+      },
+      {
+        "id": "9",
+        "title": "BashBliss",
+        "live": "http://manalipatel.infinityfreeapp.com/php-cms/",
+        "source": "https://github.com/Manali1321/php-cms",
+        "slug": "ClickToSeeMyBashBlissCMS",
+        "image": "projects/j6mhWa1JgGL1txyz1yLU4tasqGBHM71QYVI0Rb6k.png",
+        "content": "I created a CMS system that allows event planners to create and manage their own websites for various types of events. Users can customize their websites with their own branding, content.",
+        "user_id": "1",
+        "created_at": "2023-04-15 16:17:26",
+        "updated_at": "2023-04-15 16:18:12"
+      }
+    ]
+  }
+]
