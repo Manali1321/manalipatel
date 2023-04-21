@@ -1,20 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400;0,500&display=swap");
+/* General CSS */
 * {
   margin: 0;
   padding: 0;
+  font-family: "Libre Caslon Text", serif;
 }
+main {
+  background: linear-gradient(119deg, #e5ffe9 30%, #dee8f9 70%);
+  padding: 0 50vh;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+h1 {
+  text-align: center;
+  letter-spacing: 9px;
+  font-weight: 500;
+  font-size: 30px;
+  padding: 4vh;
+  margin-bottom: 1vh;
+  border-bottom: 2px solid rgb(57, 123, 57);
+}
+h1:first-child {
+  border-bottom: none;
+}
+h2 {
+  font-size: 22px;
+  font-weight: 600;
+}
+/* Header */
 .menu {
   display: flex;
   list-style-type: none;
+  justify-content: flex-start;
 }
 .menu li {
-  padding: 10px;
+  padding: 15px 30px;
   text-decoration: none;
 }
-header {
+.menu li a:hover {
+  border-bottom: 2px solid rgb(57, 123, 57);
+}
+.menu li a {
+  font-weight: 700;
+}
+header,
+footer {
   display: flex;
-  background-color: blanchedalmond;
+  padding: 0 50vh;
+  background-color: #e5ffe9;
 }
 .logo {
   width: 100px;
   height: 50px;
+}
+/* Footer */
+footer {
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+/* *********** Home ********** */
+#intro {
+  display: flex;
+  align-items: center;
+  /* padding: 5vh 10vh; */
+  padding: 5vh 0;
+  gap: 2rem;
+}
+.profession {
+  font-weight: 700;
+}
+.intro-left {
+  letter-spacing: 3px;
+  text-align: center;
+}
+.intro-left h1 {
+  font-size: 48px;
+  line-height: 80px;
+  border: none;
+}
+.intro-left p:last-child {
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: 2px;
+}
+.intro-right img {
+  border: 2px solid white;
+}
+#home-about {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  text-align: center;
+  gap: 15px;
+  padding: 3rem 0;
+}
+.home-about-me {
+  width: 190px;
+  background-color: black;
+  color: white;
+  padding: 13px;
+}
+.home-about-detail {
+  padding: 10px 0;
+}
+.home-about-detail h2 {
+  font-size: 20px;
+}
+.home-about-detail p {
+  font-size: 14px;
+}
+
+/* *********  About-intro *************** */
+.about-intro {
+  /* box-shadow: -2px 0px 2px 7px #e5ffe9; */
+  display: flex;
+  gap: 10px;
+}
+.about-intro p {
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  word-spacing: 3px;
+  line-height: 1.5rem;
+  padding: 10px;
+}
+/* *********  About-exp *************** */
+.exp-card {
+  display: flex;
+  justify-content: space-between;
+  gap: 10%;
+  padding: 10px;
+}
+.exp-card p {
+  font-size: 16px;
+}
+.exp-left {
+  width: 20%;
+}
+.exp-right {
+  width: 70%;
+}
+.education-card {
+  text-align: center;
+  padding: 10px;
+}
+.education {
+  padding-bottom: 3rem;
+}
+/* *********** Project ********** */
+#project-card {
+  display: flex;
+  /* border: 2px solid black; */
+  padding: 2rem;
+}
+.skill {
+  display: flex;
+  align-items: center;
+  padding-top: 1rem;
+}
+.skill img {
+  padding: 0 0.11rem;
+}
+.project-other img {
+  border: 5px solid black;
 }
