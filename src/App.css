@@ -81,7 +81,8 @@ footer {
   line-height: 80px;
   border: none;
 }
-.intro-left p:last-child {
+.intro-left p:last-child,
+.blog p {
   font-weight: 500;
   line-height: 30px;
   letter-spacing: 2px;
@@ -153,8 +154,18 @@ footer {
 /* *********** Project ********** */
 #project-card {
   display: flex;
-  /* border: 2px solid black; */
-  padding: 2rem;
+  gap: 1rem;
+  padding: 1rem;
+  border: 1px solid rgb(57, 123, 57);
+  margin-bottom: 1rem;
+  background-color: #dee8f9;
+  align-items: center;
+}
+#project-card:last-child {
+  margin: 0;
+}
+.project {
+  padding-bottom: 3rem;
 }
 .skill {
   display: flex;
@@ -164,6 +175,79 @@ footer {
 .skill img {
   padding: 0 0.11rem;
 }
-.project-other img {
+#project-other {
+  text-align: center;
+  /* background-color: #dee8f9; */
+}
+#project-other img {
   border: 5px solid black;
+}
+#project-other img:hover {
+  filter: blur(3px);
+}
+.hide {
+  display: none;
+}
+.block {
+  display: block;
+}
+#project-other button,
+.blog button {
+  display: inline-block;
+  margin: 5px 10px;
+  border: none;
+}
+button a:hover {
+  font-size: 16px;
+}
+button a {
+  padding: 4px 25px;
+  background-color: rgb(57, 123, 57);
+  color: #e5ffe9;
+  font-weight: 600;
+  font-size: 14px;
+  opacity: 1;
+}
+
+.project-one p {
+  font-size: 16px;
+  font-weight: 400;
+  word-spacing: 2px;
+  line-height: 1.4rem;
+}
+/* Blog */
+.blog {
+  text-align: center;
+  border-right: 3px solid rgb(57, 123, 57);
+  border-bottom: 3px solid rgb(57, 123, 57);
+  padding: 5rem 1rem;
+  margin: 2rem 0;
+}
+.blog:first-child {
+  margin-top: 0;
+}
+.blog:last-child {
+  margin: 0;
+}
+#blogs {
+  padding-bottom: 3rem;
+}
+.blog p {
+  font-size: 18px;
+  padding: 2rem 0;
+}
+/* ********** Contact ********* */
+#contact {
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem 0;
+  gap: 1rem;
+}
+#contact img {
+  border: 1px solid white;
+  padding: 30px 0;
+  background-color: gray;
+}
+.contact-detail form label {
+  padding: 3rem;
 }

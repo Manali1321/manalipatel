@@ -3,7 +3,7 @@ import React from "react";
 class Project extends React.Component {
   constructor() {
     super();
-    this.state = { project: [], skill: [], project_skill: [] };
+    this.state = { project: [], skill: [], project_skill: [], mouseEntered: false };//, mouseLeave: true
   }
 
   async componentDidMount() {
@@ -25,8 +25,20 @@ class Project extends React.Component {
       console.error("Error fetching data:", error);
     }
   }
+  handleMouseEnter = () => {
+    this.setState({ mouseEntered: true });
+  }
+  // handleMouseLeave = () => {
+  //   this.setState({ mouseLeave: false });
+  // }
 
   render() {
+    const { mouseEntered } = this.state;
+    const live = mouseEntered ? 'block' : 'hide';
+    const source = mouseEntered ? 'block' : 'hide';
+    // const { mouseLeave } = this.state;
+    // const liveBack = mouseLeave ? 'hide' : 'block';
+    // const sourceBack = mouseLeave ? 'hide' : 'block';
     return (
       <main>
         <h1>Welcome to Project Galary</h1>
@@ -46,10 +58,10 @@ class Project extends React.Component {
                     ))}
                 </div>
               </div>
-              <div className="project-other">
-                <img src={item.image} alt="project" width="300" />
-                <button><a href={item.live} target="_blank" rel="noreferrer">Live Website</a></button>
-                <button><a href={item.source} target="_blank" rel="noreferrer">Source Code</a></button>
+              <div id="project-other" onMouseEnter={this.handleMouseEnter}>
+                <img src={item.image} alt="project" width="300" height="auto" />
+                <button className={`${live}`}><a href={item.live} target="_blank" rel="noreferrer">Live Website</a></button>
+                <button className={`${source}`}><a href={item.source} target="_blank" rel="noreferrer">Source Code</a></button>
               </div>
             </div>
           ))}

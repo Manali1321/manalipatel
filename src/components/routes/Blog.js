@@ -18,16 +18,16 @@ export default function Blog() {
 
 
   return (
-    <div>
+    <main>
       <h1>Welcome to My Blog Page</h1>
-      {blog.map(b => (
-        <div>
-          <h2>{b.title}</h2>
-          <p>{b.blog}</p>
-        </div>
-      ))}
-      <div>
-
+      <div id="blogs">
+        {blog.map(b => (
+          <div className="blog">
+            <h2>{b.title}</h2>
+            <p>{b.blog}</p>
+            <button><a href={b.link} target="_blank">Click to read full artical</a></button>
+          </div>
+        ))}
       </div>
-    </div>)
+    </main>)
 }

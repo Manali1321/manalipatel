@@ -5,9 +5,8 @@ class Footer extends React.Component {
     return (
       <footer>
         <img src="./image/logo.jpeg" alt='logo' className="logo"></img>
-
         <p>@ManaliPatel, Portfolio 2023</p>
-        <p><a href="https://www.linkedin.com/in/manalipatel1321/">Linkedin</a></p>
+        <span class='linkedin'><a href="https://www.linkedin.com/in/manalipatel1321/">Linkedin</a></span>
       </footer>
     )
   }
