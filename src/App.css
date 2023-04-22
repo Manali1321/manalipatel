@@ -65,7 +65,6 @@ footer {
 #intro {
   display: flex;
   align-items: center;
-  /* padding: 5vh 10vh; */
   padding: 5vh 0;
   gap: 2rem;
 }
@@ -116,7 +115,6 @@ footer {
 
 /* *********  About-intro *************** */
 .about-intro {
-  /* box-shadow: -2px 0px 2px 7px #e5ffe9; */
   display: flex;
   gap: 10px;
 }
@@ -177,7 +175,6 @@ footer {
 }
 #project-other {
   text-align: center;
-  /* background-color: #dee8f9; */
 }
 #project-other img {
   border: 5px solid black;
@@ -248,6 +245,116 @@ button a {
   padding: 30px 0;
   background-color: gray;
 }
-.contact-detail form label {
-  padding: 3rem;
+.field {
+  padding: 0.51rem 0;
+}
+.field label {
+  padding-right: 30px;
+}
+.contact-detail button {
+  padding: 4px 30px;
+  background-color: gray;
+  border: none;
+  margin: 2rem 0;
+}
+.linkedin a {
+  font-size: 32px;
+  color: rgb(45, 45, 247);
+  font-weight: 600;
+}
+/* Media Query */
+@media only screen and (max-width: 1250px) {
+  main,
+  header,
+  footer {
+    padding: 0 30vh;
+  }
+  h1 {
+    letter-spacing: 7px;
+    padding: 2vh;
+  }
+}
+@media only screen and (max-width: 1050px) {
+  main,
+  header,
+  footer {
+    padding: 0 25vh;
+  }
+  .about-intro img {
+    width: 350px;
+  }
+  .about-intro p {
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    line-height: 1.3rem;
+  }
+}
+@media only screen and (max-width: 975px) {
+  main,
+  header,
+  footer {
+    padding: 0 15vh;
+  }
+}
+@media only screen and (max-width: 850px) {
+  main,
+  header,
+  footer {
+    padding: 0 8vh;
+  }
+  .intro-left h1 {
+    font-size: 42px;
+    line-height: 60px;
+  }
+  .intro-right img {
+    width: 270px;
+  }
+  .about-intro img {
+    width: 250px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  main,
+  header,
+  footer {
+    padding: 0 4vh;
+  }
+  .intro-left h1 {
+    font-size: 40px;
+    line-height: 40px;
+  }
+  .about-intro {
+    display: block;
+    text-align: center;
+  }
+  .exp-card {
+    gap: 5%;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  #project-card {
+    display: block;
+    align-items: center;
+  }
+
+  #project-other {
+    display: flex;
+    align-items: center;
+  }
+}
+@media only screen and (max-width: 630px) {
+  header,
+  footer {
+    padding: 0;
+  }
+  #intro {
+    display: block;
+    text-align: center;
+  }
+  .menu li {
+    padding: 15px 10px;
+  }
 }

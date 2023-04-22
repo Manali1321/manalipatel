@@ -10,25 +10,25 @@ function Contact() {
         <div class='contact-detail'>
           <h1>Send me a message</h1>
           <form>
-            <div>
+            <div className='field'>
               <label htmlFor="name">
-                Name
+                Name:
               </label>
               <input type="text" id="name" name="name" placeholder="Please enter your name" required>
               </input>
             </div>
-            <div>
+            <div class='field'>
               <label htmlFor="email">
-                Email
+                Email:
               </label>
               <input type="email" id="email" name="email" placeholder="Please enter your email" required>
               </input>
             </div>
-            <div>
+            <div class='field'>
               <label htmlFor="Message">
-                Message
+                Message:
               </label>
-              <textarea id="message" name="message" placeholder="Leave your message here" rows="4" cols="50" required>
+              <textarea id="message" name="message" placeholder="Leave your message here" rows="4" cols="30" required>
               </textarea>
             </div>
             <button id="button" value="Submit">Submit</button>
