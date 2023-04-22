@@ -45,11 +45,25 @@ h2 {
 .menu li a {
   font-weight: 700;
 }
+/* header {
+  background-color: #e5ffe9;
+} */
+/* footer {
+
+} */
 header,
 footer {
   display: flex;
   padding: 0 50vh;
-  background-color: #e5ffe9;
+  background-color: black;
+  color: white;
+}
+header a,
+#contact button {
+  color: white;
+}
+#contact button {
+  color: black;
 }
 .logo {
   width: 100px;
@@ -239,6 +253,7 @@ button a {
   justify-content: space-between;
   padding: 3rem 0;
   gap: 1rem;
+  flex-wrap: wrap;
 }
 #contact img {
   border: 1px solid white;
@@ -342,6 +357,10 @@ button a {
 
   #project-other {
     display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  #contact {
     align-items: center;
   }
 }
