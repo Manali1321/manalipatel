@@ -45,12 +45,7 @@ h2 {
 .menu li a {
   font-weight: 700;
 }
-/* header {
-  background-color: #e5ffe9;
-} */
-/* footer {
 
-} */
 header,
 footer {
   display: flex;

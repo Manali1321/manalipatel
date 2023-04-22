@@ -32,7 +32,6 @@ class Home extends React.Component {
               </div>
             </div>
           </div>
-
           <div class="home-about-me">
             <img src="./image/skill/inspire.png" width="100" alt="img"></img>
             <div class="home-about-detail">
@@ -46,7 +45,6 @@ class Home extends React.Component {
               <p>I approach my work with compassion and strive to foster a positive and inclusive environment.</p></div>
           </div>
         </div>
-
       </main >
     )
   }

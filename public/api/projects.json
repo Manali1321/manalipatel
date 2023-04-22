@@ -24,7 +24,7 @@
       },
       {
         "id": "2",
-        "title": "EasyPlan",
+        "title": "EasyTravel",
         "live": "https://manali1321.github.io/JS-pet-project/",
         "source": "https://github.com/Manali1321/JS-pet-project",
         "slug": "ClickToSeeEasyPlanWebsite",
@@ -54,6 +54,18 @@
         "slug": "ClickToSeeMyBashBlissCMS",
         "image": "projects/j6mhWa1JgGL1txyz1yLU4tasqGBHM71QYVI0Rb6k.png",
         "content": "I created a CMS system that allows event planners to create and manage their own websites for various types of events. Users can customize their websites with their own branding, content.",
+        "user_id": "1",
+        "created_at": "2023-04-15 16:17:26",
+        "updated_at": "2023-04-15 16:18:12"
+      },
+      {
+        "id": "10",
+        "title": "EasyPlan",
+        "live": "https://easy-travel.vercel.app/",
+        "source": "https://github.com/Manali1321/Easy_Travel",
+        "slug": "ClickToSeeItinararyCreater",
+        "image": "projects/easyplan.png",
+        "content": "This website is create with node.js, EJS with use of countriesnow, google place, google map and openweather API. Manipulating API data as per need and create as per user friendly. After clone this repo you have to run couple of code as below",
         "user_id": "1",
         "created_at": "2023-04-15 16:17:26",
         "updated_at": "2023-04-15 16:18:12"
