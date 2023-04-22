@@ -357,6 +357,7 @@ button a {
   }
   #contact {
     align-items: center;
+    justify-content: space-around;
   }
 }
 @media only screen and (max-width: 630px) {
@@ -370,5 +371,12 @@ button a {
   }
   .menu li {
     padding: 15px 10px;
+    font-size: 13px;
+  }
+  #home-about {
+    justify-content: space-around;
+  }
+  footer p {
+    font-size: 14px;
   }
 }
