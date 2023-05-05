@@ -53,7 +53,7 @@
         "source": "https://github.com/Manali1321/php-cms",
         "slug": "ClickToSeeMyBashBlissCMS",
         "image": "projects/j6mhWa1JgGL1txyz1yLU4tasqGBHM71QYVI0Rb6k.png",
-        "content": "I created a CMS system that allows event planners to create and manage their own websites for various types of events. Users can customize their websites with their own branding, content.",
+        "content": "I created a CMS system that allows event planners to create and manage their own websites for various types of events. Users can customize their websites with their own branding and content. Database is created with PHPmyAdmin on infinityfree. When user select one category of event it goes detail of that category page with use of JavaScript Param method which collect category_id and do filter all events with that category_id and shows result. If you go from event page from menu it will shows all stored value in event table in Database.",
         "user_id": "1",
         "created_at": "2023-04-15 16:17:26",
         "updated_at": "2023-04-15 16:18:12"
@@ -65,7 +65,19 @@
         "source": "https://github.com/Manali1321/Easy_Travel",
         "slug": "ClickToSeeItinararyCreater",
         "image": "projects/easyplan.png",
-        "content": "This website is create with node.js, EJS with use of countriesnow, google place, google map and openweather API. Manipulating API data as per need and create as per user friendly. After clone this repo you have to run couple of code as below",
+        "content": "This website is create with node.js, EJS with use of countriesnow, google place, google map and openweather API. Manipulating API data as per need and create as per user friendly. During this project work, I learn in detail of OOPS, API and analyse user needs.",
+        "user_id": "1",
+        "created_at": "2023-04-15 16:17:26",
+        "updated_at": "2023-04-15 16:18:12"
+      },
+      {
+        "id": "11",
+        "title": "Portfolio-CMS",
+        "live": "https://manalipatel.vercel.app/",
+        "source": "https://github.com/Manali1321/laravel-blade-cms-1",
+        "slug": "ClickToSeePortfolioManagementSystem",
+        "image": "projects/Laravelwork.png",
+        "content": "Porfolio-CMS is created in laravel. The source code attached in this website is for Laravel. Export the json file and create frontend by use of React.js. This project is practice of MVC structure, React, OOPS conecept and responsive design.",
         "user_id": "1",
         "created_at": "2023-04-15 16:17:26",
         "updated_at": "2023-04-15 16:18:12"

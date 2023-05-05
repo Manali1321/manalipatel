@@ -90,7 +90,7 @@
       {
         "id": "20",
         "project_id": "10",
-        "skill_id": "12",
+        "skill_id": "10",
         "created_at": null,
         "updated_at": null
       },
@@ -104,6 +104,48 @@
       {
         "id": "22",
         "project_id": "10",
+        "skill_id": "2",
+        "created_at": null,
+        "updated_at": null
+      },
+      {
+        "id": "23",
+        "project_id": "10",
+        "skill_id": "14",
+        "created_at": null,
+        "updated_at": null
+      },
+      {
+        "id": "24",
+        "project_id": "11",
+        "skill_id": "7",
+        "created_at": null,
+        "updated_at": null
+      },
+      {
+        "id": "25",
+        "project_id": "11",
+        "skill_id": "12",
+        "created_at": null,
+        "updated_at": null
+      },
+      {
+        "id": "26",
+        "project_id": "11",
+        "skill_id": "2",
+        "created_at": null,
+        "updated_at": null
+      },
+      {
+        "id": "27",
+        "project_id": "7",
+        "skill_id": "2",
+        "created_at": null,
+        "updated_at": null
+      },
+      {
+        "id": "28",
+        "project_id": "9",
         "skill_id": "2",
         "created_at": null,
         "updated_at": null

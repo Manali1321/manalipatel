@@ -1,6 +1,31 @@
-import React from "react";
+import React, { useState } from "react";
 
 function Contact() {
+  const [status, setStatus] = useState("");
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+
+    const form = event.target;
+    const data = new FormData(form);
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        body: data,
+      });
+
+      if (response.ok) {
+        setStatus("success");
+      } else {
+        setStatus("error");
+      }
+    } catch (error) {
+      console.error(error);
+      setStatus("error");
+    }
+  };
+
   return (
     <main>
       <div id='contact'>
@@ -9,7 +34,12 @@ function Contact() {
         </div>
         <div class='contact-detail'>
           <h1>Send me a message</h1>
-          <form>
+          {status === "success" && (
+            <p>Your message was sent successfully. Thank you.!!</p>
+          )}
+          {status === "error" && <p>Something went wrong. Please try again later.</p>}
+
+          <form action="/api/contact" method="post" onSubmit={handleSubmit}>
             <div className='field'>
               <label htmlFor="name">
                 Name:

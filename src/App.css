@@ -7,7 +7,7 @@
 }
 main {
   background: linear-gradient(119deg, #e5ffe9 30%, #dee8f9 70%);
-  padding: 0 50vh;
+  padding: 0 35vh;
 }
 a {
   text-decoration: none;
@@ -49,7 +49,7 @@ h2 {
 header,
 footer {
   display: flex;
-  padding: 0 50vh;
+  padding: 0 35vh;
   background-color: black;
   color: white;
 }
@@ -158,6 +158,9 @@ footer {
 .education {
   padding-bottom: 3rem;
 }
+#resume {
+  border: none;
+}
 /* *********** Project ********** */
 #project-card {
   display: flex;
@@ -188,15 +191,15 @@ footer {
 #project-other img {
   border: 5px solid black;
 }
-#project-other img:hover {
+/* #project-other img:hover {
   filter: blur(3px);
-}
-.hide {
+} */
+/* .hide {
   display: none;
 }
 .block {
   display: block;
-}
+} */
 #project-other button,
 .blog button {
   display: inline-block;
@@ -273,6 +276,13 @@ button a {
   font-weight: 600;
 }
 /* Media Query */
+@media only screen and (max-width: 1300px) {
+  main,
+  header,
+  footer {
+    padding: 0 32vh;
+  }
+}
 @media only screen and (max-width: 1250px) {
   main,
   header,
@@ -283,12 +293,23 @@ button a {
     letter-spacing: 7px;
     padding: 2vh;
   }
+  .home-about-me {
+    width: 170px;
+    padding: 9px;
+  }
+}
+@media only screen and (max-width: 1120px) {
+  main,
+  header,
+  footer {
+    padding: 0 23vh;
+  }
 }
 @media only screen and (max-width: 1050px) {
   main,
   header,
   footer {
-    padding: 0 25vh;
+    padding: 0 20vh;
   }
   .about-intro img {
     width: 350px;
@@ -300,12 +321,25 @@ button a {
     word-spacing: 1px;
     line-height: 1.3rem;
   }
+  .home-about-me {
+    width: 150px;
+  }
+  .home-about-detail p {
+    font-size: 13px;
+  }
 }
 @media only screen and (max-width: 975px) {
   main,
   header,
   footer {
     padding: 0 15vh;
+  }
+}
+@media only screen and (max-width: 890px) {
+  main,
+  header,
+  footer {
+    padding: 0 10vh;
   }
 }
 @media only screen and (max-width: 850px) {
@@ -323,6 +357,14 @@ button a {
   }
   .about-intro img {
     width: 250px;
+  }
+  h1 {
+    letter-spacing: 3px;
+    padding: 2vh 0;
+  }
+  #contact {
+    align-items: center;
+    justify-content: space-around;
   }
 }
 @media only screen and (max-width: 700px) {
@@ -355,15 +397,12 @@ button a {
     align-items: center;
     flex-direction: column;
   }
-  #contact {
-    align-items: center;
-    justify-content: space-around;
-  }
 }
 @media only screen and (max-width: 630px) {
   header,
   footer {
     padding: 0;
+    justify-content: space-evenly;
   }
   #intro {
     display: block;
@@ -377,6 +416,17 @@ button a {
     justify-content: space-around;
   }
   footer p {
+    font-size: 14px;
+  }
+  .linkedin a {
+    font-size: 28px;
+  }
+  .exp-card h2,
+  .education-card h2 {
+    font-size: 16px;
+  }
+  .exp-card p,
+  .education-card p {
     font-size: 14px;
   }
 }
