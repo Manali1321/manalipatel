@@ -63,7 +63,9 @@ function Contact() {
             </div>
             <button id="button" value="Submit">Submit</button>
           </form>
-          <h3>Or connect with me via: <span class='linkedin'><a href="https://www.linkedin.com/in/manalipatel1321/">Linkedin</a></span></h3>
+          <h3>Or connect with me via: <span class='social'><a href="https://www.linkedin.com/in/manalipatel1321/">Linkedin</a></span></h3>
+          <h3>Visit Github Profile: <span class='social github'><a href="https://github.com/Manali1321">Github</a></span></h3>
+
         </div>
       </div>
     </main>)

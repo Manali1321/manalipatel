@@ -270,10 +270,13 @@ button a {
   border: none;
   margin: 2rem 0;
 }
-.linkedin a {
+.social a {
   font-size: 32px;
-  color: rgb(45, 45, 247);
   font-weight: 600;
+  color: rgb(45, 45, 247);
+}
+.social a:hover {
+  border-bottom: 1px solid rgb(29, 29, 63);
 }
 /* Media Query */
 @media only screen and (max-width: 1300px) {
@@ -418,7 +421,7 @@ button a {
   footer p {
     font-size: 14px;
   }
-  .linkedin a {
+  .social a {
     font-size: 28px;
   }
   .exp-card h2,
