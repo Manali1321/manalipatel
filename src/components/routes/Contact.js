@@ -37,7 +37,7 @@ function Contact() {
           {status === "success" && (
             <p>Your message was sent successfully. Thank you.!!</p>
           )}
-          {status === "error" && <p>Something went wrong. Please try again later.</p>}
+          {status === "error" && <p id="error">Something went wrong. Send a Email to me: <a href="mailto: patelmanali216@gmail.com">Click Me</a></p>}
 
           <form action="/api/contact" method="post" onSubmit={handleSubmit}>
             <div className='field'>
