@@ -1,21 +1,28 @@
-const React = require('react');
-const {
-  useState
-} = require('react');
+import React, { useState } from "react";
 function Contact() {
   const [status, setStatus] = useState("");
   const handleSubmit = async event => {
     event.preventDefault();
     const form = event.target;
     const data = new FormData(form);
-    var userName = data.get("name");
-    console.log(userName);
+    var name = data.get("name");
+    var email = data.get("email");
+    var message = data.get("message");
+    const newData = {
+      name: name,
+      email: email,
+      message: message
+    };
     try {
-      const response = await fetch("http://localhost:8080/api/contact", {
+      const res = await fetch("https://manalipatel-manali1321.vercel.app/api/contact", {
         method: "POST",
-        body: userName
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(newData)
       });
-      if (response.ok) {
+      console.log(res.body);
+      if (res.ok) {
         setStatus("success");
       } else {
         setStatus("error");
@@ -85,4 +92,4 @@ function Contact() {
     href: "https://github.com/Manali1321"
   }, "Github"))))));
 }
-module.exports = Contact;
+export default Contact;

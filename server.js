@@ -7,7 +7,7 @@ const bodyParser = require('body-parser');
 // Middleware server
 const cors = require('cors');
 app.use(cors());
-const allowedOrigins = ['http://localhost:3000', 'hhttps://manalipatel-manali1321.vercel.app/api/contact'];
+const allowedOrigins = ['http://localhost:3000', 'http://localhost:8080/api/contact'];
 app.use(cors({
   origin: function (origin, callback) {
     if (!origin || allowedOrigins.indexOf(origin) !== -1) {
