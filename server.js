@@ -3,11 +3,11 @@ const nodemailer = require("nodemailer");
 const express = require("express");
 const app = express();
 const bodyParser = require('body-parser');
-const contact = require("./src/components/routes/Contact");
+
 // Middleware server
 const cors = require('cors');
 app.use(cors());
-const allowedOrigins = ['http://localhost:3000', 'http://localhost:8080'];
+const allowedOrigins = ['http://localhost:3000', 'http://localhost:8080/api/contact'];
 app.use(cors({
   origin: function (origin, callback) {
     if (!origin || allowedOrigins.indexOf(origin) !== -1) {
@@ -21,8 +21,7 @@ app.use(cors({
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-console.log('started')
-app.post("/api/contact", contact, async (req, res) => {
+app.post("/api/contact", async (req, res) => {
   console.log(req.body)
   const { name, email, message } = req.body;
 

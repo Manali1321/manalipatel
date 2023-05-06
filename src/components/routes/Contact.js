@@ -1,23 +1,27 @@
-const React = require("react");
-const { useState } = require("usestate");
+import React, { useState } from "react";
 
 function Contact() {
   const [status, setStatus] = useState("");
-
   const handleSubmit = async (event) => {
     event.preventDefault();
 
     const form = event.target;
     const data = new FormData(form);
-    var userName = data.get("name");
-    console.log(userName);
+    var name = data.get("name");
+    var email = data.get("email");
+    var message = data.get("message");
+    const newData = { name: name, email: email, message: message }
     try {
-      const response = await fetch("http://localhost:8080/api/contact", {
+      const res = await fetch("http://localhost:8080/api/contact", {
         method: "POST",
-        body: userName,
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(newData),
       });
+      console.log(res.body);
 
-      if (response.ok) {
+      if (res.ok) {
         setStatus("success");
       } else {
         setStatus("error");
