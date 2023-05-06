@@ -2,9 +2,14 @@ require("dotenv").config();
 const nodemailer = require("nodemailer");
 const express = require("express");
 const app = express();
+const bodyParser = require('body-parser');
 
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
 
+console.log('started')
 app.post("/api/contact", async (req, res) => {
+  console.log(req.body)
   const { name, email, message } = req.body;
 
   // Create a transporter object to send the email
@@ -14,6 +19,11 @@ app.post("/api/contact", async (req, res) => {
       user: process.env.EMAIL_ADDRESS,
       pass: process.env.EMAIL_PASSWORD,
     },
+    port: 587,
+    secure: false,
+    tls: {
+      rejectUnauthorized: false
+    }
   });
 
   // Set up the email content
@@ -49,5 +59,5 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
 // Start the server
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => console.log(`Server started on port ${PORT}`));

@@ -59,7 +59,7 @@ class Project extends React.Component {
                 </div>
               </div>
               <div id="project-other" onMouseEnter={this.handleMouseEnter}>
-                <img src={item.image} alt="project" width="300" height="auto" />
+                <img src={item.image} alt="project" width="300" height="200" />
                 <button className={`${live}`}><a href={item.live} target="_blank" rel="noreferrer">Live Website</a></button>
                 <button className={`${source}`}><a href={item.source} target="_blank" rel="noreferrer">Source Code</a></button>
               </div>

@@ -149,6 +149,34 @@
         "skill_id": "2",
         "created_at": null,
         "updated_at": null
+      },
+      {
+        "id": "29",
+        "project_id": "12",
+        "skill_id": "8",
+        "created_at": null,
+        "updated_at": null
+      },
+      {
+        "id": "30",
+        "project_id": "12",
+        "skill_id": "14",
+        "created_at": null,
+        "updated_at": null
+      },
+      {
+        "id": "31",
+        "project_id": "12",
+        "skill_id": "7",
+        "created_at": null,
+        "updated_at": null
+      },
+      {
+        "id": "32",
+        "project_id": "12",
+        "skill_id": "6",
+        "created_at": null,
+        "updated_at": null
       }
     ]
   }
