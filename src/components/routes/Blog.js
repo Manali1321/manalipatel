@@ -25,7 +25,7 @@ export default function Blog() {
           <div className="blog">
             <h2>{b.title}</h2>
             <p>{b.blog}</p>
-            <button><a href={b.link} target="_blank">Click to read full artical</a></button>
+            <button><a href={b.link} target="_blank" rel="noreferrer">Click to read full artical</a></button>
           </div>
         ))}
       </div>

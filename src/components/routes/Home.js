@@ -17,30 +17,30 @@ class Home extends React.Component {
           </div>
         </div>
         <div id="home-about">
-          <div class="home-about-me">
+          <div className="home-about-me">
             <img src="./image/skill/inspire.png" width="100" alt="img"></img>
-            <div class="home-about-detail">
+            <div className="home-about-detail">
               <h2>Curiosity Driven</h2>
               <p>I possess a deep curiosity and a constant desire to learn more. I enjoy probing safely but steadily to find out the "why" behind things, and I am always open to new ideas and approaches.</p>
             </div>
           </div>
-          <div class="home-about-me">
+          <div className="home-about-me">
             <img src="./image/skill/inspire.png" width="100" alt="img"></img><div>
-              <div class="home-about-detail">
+              <div className="home-about-detail">
                 <h2>Being Present</h2>
                 <p>I believe in being present in the moment, fully engaged in the task at hand.</p>
               </div>
             </div>
           </div>
-          <div class="home-about-me">
+          <div className="home-about-me">
             <img src="./image/skill/inspire.png" width="100" alt="img"></img>
-            <div class="home-about-detail">
+            <div className="home-about-detail">
               <h2>Hands-On-Mentality</h2>
               <p>Practice makes me improve. So I like to sharpen my skills and search for the right opportunities. I learn well by observing, but it stays best when I do it.</p></div>
           </div>
-          <div class="home-about-me">
+          <div className="home-about-me">
             <img src="./image/skill/inspire.png" width="100" alt="img"></img>
-            <div class="home-about-detail">
+            <div className="home-about-detail">
               <h2>Empathetic</h2>
               <p>I approach my work with compassion and strive to foster a positive and inclusive environment.</p></div>
           </div>

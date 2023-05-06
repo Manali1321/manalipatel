@@ -33,8 +33,8 @@ class About extends React.Component {
 
         <h1>Experience</h1>
         {this.state.experience.map(exp => (
-          <div class="exp-card">
-            <div class="exp-left">
+          <div className="exp-card">
+            <div className="exp-left">
               <h2>{exp.title}</h2>
               <p>{exp.start}-{exp.end}</p>
             </div>

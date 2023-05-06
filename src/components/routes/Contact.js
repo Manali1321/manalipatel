@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+const React = require("react");
+const { useState } = require("usestate");
 
 function Contact() {
   const [status, setStatus] = useState("");
@@ -8,11 +9,12 @@ function Contact() {
 
     const form = event.target;
     const data = new FormData(form);
-
+    var userName = data.get("name");
+    console.log(userName);
     try {
       const response = await fetch("http://localhost:8080/api/contact", {
         method: "POST",
-        body: data,
+        body: userName,
       });
 
       if (response.ok) {
@@ -32,7 +34,7 @@ function Contact() {
         <div>
           <img src="./image/contact.jpeg" width="300" alt="me"></img>
         </div>
-        <div class='contact-detail'>
+        <div className='contact-detail'>
           <h1>Send me a message</h1>
           {status === "success" && (
             <p>Your message was sent successfully. Thank you.!!</p>
@@ -47,14 +49,14 @@ function Contact() {
               <input type="text" id="name" name="name" placeholder="Please enter your name" required>
               </input>
             </div>
-            <div class='field'>
+            <div className='field'>
               <label htmlFor="email">
                 Email:
               </label>
               <input type="email" id="email" name="email" placeholder="Please enter your email" required>
               </input>
             </div>
-            <div class='field'>
+            <div className='field'>
               <label htmlFor="Message">
                 Message:
               </label>
@@ -63,8 +65,8 @@ function Contact() {
             </div>
             <button id="button" value="Submit">Submit</button>
           </form>
-          <h3>Or connect with me via: <span class='social'><a href="https://www.linkedin.com/in/manalipatel1321/">Linkedin</a></span></h3>
-          <h3>Visit Github Profile: <span class='social github'><a href="https://github.com/Manali1321">Github</a></span></h3>
+          <h3>Or connect with me via: <span className='social'><a href="https://www.linkedin.com/in/manalipatel1321/">Linkedin</a></span></h3>
+          <h3>Visit Github Profile: <span className='social github'><a href="https://github.com/Manali1321">Github</a></span></h3>
 
         </div>
       </div>
