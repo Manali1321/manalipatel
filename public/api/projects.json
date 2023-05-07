@@ -17,7 +17,7 @@
         "source": "https://github.com/Manali1321/Type-A-Thon",
         "slug": "ClickToSeeTypeAThonWebsite",
         "image": "projects/rlGUbMEXVfvKwVuZ1ckNeXxVnbylUl9ays5VOIQO.png",
-        "content": "I designed and developed a web game using HTML, CSS, and JavaScript that features falling random letters. Players must press the corresponding key on their keyboard to advance through the levels. The project highlights my skills in front-end web development and my ability to create engaging user experiences.",
+        "content": "I designed and developed a web game using HTML, CSS, and JavaScript that features falling random letters. Players must press the corresponding key on their keyboard to advance through the levels. The project highlights my skills in front-end web development and my ability to create engaging user experiences.(Only for Desktop)",
         "user_id": "2",
         "created_at": "2023-04-14 19:38:32",
         "updated_at": "2023-04-15 04:40:52"
@@ -77,7 +77,7 @@
         "source": "https://github.com/Manali1321/laravel-blade-cms-1",
         "slug": "ClickToSeePortfolioManagementSystem",
         "image": "projects/Laravelwork.png",
-        "content": "Porfolio-CMS is created in laravel. The source code attached in this website is for Laravel. Export the json file and create frontend by use of React.js. This project is practice of MVC structure, React, OOPS conecept and responsive design.",
+        "content": "Porfolio-CMS is created in laravel and connected contact form with node server. The source code attached in this website is for Laravel. Export the json file and create frontend by use of React.js. This project is practice of MVC structure, React, OOPS conecept and responsive design. When user fill contact for on submit POST request handle using node server. Fetch real time data and send email to link email address.",
         "user_id": "1",
         "created_at": "2023-04-15 16:17:26",
         "updated_at": "2023-04-15 16:18:12"

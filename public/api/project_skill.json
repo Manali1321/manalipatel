@@ -177,6 +177,20 @@
         "skill_id": "6",
         "created_at": null,
         "updated_at": null
+      },
+      {
+        "id": "33",
+        "project_id": "11",
+        "skill_id": "6",
+        "created_at": null,
+        "updated_at": null
+      },
+      {
+        "id": "34",
+        "project_id": "11",
+        "skill_id": "14",
+        "created_at": null,
+        "updated_at": null
       }
     ]
   }
