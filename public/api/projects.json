@@ -12,12 +12,12 @@
     "data": [
       {
         "id": "1",
-        "title": "Type-A-thon",
+        "title": "Type-A-thon (Only for Desktop)",
         "live": "https://manali1321.github.io/Type-A-Thon/",
         "source": "https://github.com/Manali1321/Type-A-Thon",
         "slug": "ClickToSeeTypeAThonWebsite",
         "image": "projects/rlGUbMEXVfvKwVuZ1ckNeXxVnbylUl9ays5VOIQO.png",
-        "content": "I designed and developed a web game using HTML, CSS, and JavaScript that features falling random letters. Players must press the corresponding key on their keyboard to advance through the levels. The project highlights my skills in front-end web development and my ability to create engaging user experiences.(Only for Desktop)",
+        "content": "I designed and developed a web game using HTML, CSS, and JavaScript that features falling random letters. Players must press the corresponding key on their keyboard to advance through the levels. The project highlights my skills in front-end web development and my ability to create engaging user experiences.I also had user testing for this website with keyboard accessibility. Click to see detail report: https://docs.google.com/document/d/1DjX9U7--HYk4tP0MZTrc21EPIx75BfPp/edit?usp=sharing&ouid=109259461841611412607&rtpof=true&sd=true",
         "user_id": "2",
         "created_at": "2023-04-14 19:38:32",
         "updated_at": "2023-04-15 04:40:52"
