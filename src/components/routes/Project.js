@@ -8,8 +8,8 @@ class Project extends React.Component {
 
   async componentDidMount() {
     try {
-      const projectResponse = await fetch('/api/projects.json');
-      const skillResponse = await fetch('/api/skills.json');
+      const projectResponse = await fetch('https://admin.codemanali.ca/api/projects');
+      const skillResponse = await fetch('https://admin.codemanali.ca/api/skills');
       const projectSkillResponse = await fetch('/api/project_skill.json');
 
       const projectData = await projectResponse.json();
@@ -17,9 +17,9 @@ class Project extends React.Component {
       const projectSkillData = await projectSkillResponse.json();
 
       this.setState({
-        project: projectData[2].data,
-        skill: skillData[2].data,
-        project_skill: projectSkillData[2].data
+        project: projectData,
+        skill: skillData,
+        project_skill: projectSkillData
       });
     } catch (error) {
       console.error("Error fetching data:", error);
@@ -53,13 +53,13 @@ class Project extends React.Component {
                     .filter(ps => ps.project_id === item.id)
                     .map(ps => (
                       <span>
-                        <img src={this.state.skill.find(s => s.id === ps.skill_id).image} width="50" alt="skill">
+                        <img src={this.state.skill.find(s => s.id === ps.skill_id).image.replace("localhoststorage", "admin.codemanali.ca/storage") && item.image} width="50" alt="skill">
                         </img></span>
                     ))}
                 </div>
               </div>
               <div id="project-other" onMouseEnter={this.handleMouseEnter}>
-                <img src={item.image} alt="project" width="300" height="200" />
+                <img src={item.image && item.image.replace("localhoststorage", "admin.codemanali.ca/storage")} alt="project" width="300" height="200" />
                 <button className={`${live}`}><a href={item.live} target="_blank" rel="noreferrer">Live Website</a></button>
                 <button className={`${source}`}><a href={item.source} target="_blank" rel="noreferrer">Source Code</a></button>
               </div>

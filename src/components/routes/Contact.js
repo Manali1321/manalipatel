@@ -12,7 +12,7 @@ function Contact() {
     var message = data.get("message");
     const newData = { name: name, email: email, message: message }
     try {
-      const res = await fetch("http://localhost:8080/api/contact", {
+      const res = await fetch("https://contact.codemanali.ca/contact", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -45,7 +45,7 @@ function Contact() {
           )}
           {status === "error" && <p id="error">Something went wrong. Send a Email to me: <a href="mailto: patelmanali216@gmail.com">Click Me</a></p>}
 
-          <form action="/api/contact" method="post" onSubmit={handleSubmit}>
+          <form action="https://contact.codemanali.ca/contact" method="post" onSubmit={handleSubmit}>
             <div className='field'>
               <label htmlFor="name">
                 Name:

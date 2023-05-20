@@ -4,11 +4,11 @@ export default function Blog() {
   const [blog, setBlog] = useState([]);
   useEffect(() => {
     const getBlog = async () => {
-      const blogResponse = await fetch('/api/blogs.json');
+      const blogResponse = await fetch('https://admin.codemanali.ca/api/blogs');
       const blogData = await blogResponse.json();
       // console.log(blogData);
 
-      setBlog(blogData[2].data);
+      setBlog(blogData);
     };
     getBlog();
   }, []);

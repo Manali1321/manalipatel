@@ -7,13 +7,13 @@ class About extends React.Component {
   }
   async componentDidMount() {
     try {
-      const experienceResponse = await fetch('/api/experiences.json');
-      const educationResponse = await fetch('/api/qualifications.json');
+      const experienceResponse = await fetch('https://admin.codemanali.ca/api/experiences');
+      const educationResponse = await fetch('https://admin.codemanali.ca/api/qualifications');
       const experienceData = await experienceResponse.json();
       const educationData = await educationResponse.json();
       this.setState({
-        experience: experienceData[2].data,
-        education: educationData[2].data
+        experience: experienceData,
+        education: educationData
       });
     } catch (error) {
       console.error("Error fetching data:", error);

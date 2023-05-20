@@ -14,7 +14,7 @@ function Contact() {
       message: message
     };
     try {
-      const res = await fetch("https://manalipatel-manali1321.vercel.app/api/contact", {
+      const res = await fetch("https://contact.codemanali.ca/contact", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
@@ -45,7 +45,7 @@ function Contact() {
   }, "Something went wrong. Send a Email to me: ", /*#__PURE__*/React.createElement("a", {
     href: "mailto: patelmanali216@gmail.com"
   }, "Click Me")), /*#__PURE__*/React.createElement("form", {
-    action: "/api/contact",
+    action: "https://contact.codemanali.ca/contact",
     method: "post",
     onSubmit: handleSubmit
   }, /*#__PURE__*/React.createElement("div", {

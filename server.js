@@ -7,7 +7,7 @@ const bodyParser = require('body-parser');
 // Middleware server
 const cors = require('cors');
 app.use(cors());
-const allowedOrigins = 'https://manalipatel.vercel.app/contact';
+const allowedOrigins = ['https://contact.codemanali.ca/', 'https://codemanali.ca/'];
 app.use(cors({
   origin: function (origin, callback) {
     if (!origin || allowedOrigins.indexOf(origin) !== -1) {
@@ -21,7 +21,8 @@ app.use(cors({
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-app.post("/api/contact", async (req, res) => {
+// Routes
+app.post("/contact", async (req, res) => {
   console.log(req.body)
   const { name, email, message } = req.body;
 

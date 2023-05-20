@@ -12,16 +12,16 @@ class Project extends React.Component {
 
   async componentDidMount() {
     try {
-      const projectResponse = await fetch('/api/projects.json');
-      const skillResponse = await fetch('/api/skills.json');
+      const projectResponse = await fetch('https://admin.codemanali.ca/api/projects');
+      const skillResponse = await fetch('https://admin.codemanali.ca/api/skills');
       const projectSkillResponse = await fetch('/api/project_skill.json');
       const projectData = await projectResponse.json();
       const skillData = await skillResponse.json();
       const projectSkillData = await projectSkillResponse.json();
       this.setState({
-        project: projectData[2].data,
-        skill: skillData[2].data,
-        project_skill: projectSkillData[2].data
+        project: projectData,
+        skill: skillData,
+        project_skill: projectSkillData
       });
     } catch (error) {
       console.error("Error fetching data:", error);
