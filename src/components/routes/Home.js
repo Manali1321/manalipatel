@@ -10,7 +10,7 @@ class Home extends React.Component {
           <div className="intro-left">
             <p className="profession">Web Developer</p>
             <h1>Manali A. <br></br>Patel</h1>
-            <p>I bring a wealth of expertise in full stack development, usability, testing, design software, and project management. With a strong motivation for success, I am committed to creating professional and innovative web solutions that exceed expectations.</p>
+            <p className="about-me">I bring a wealth of expertise in full stack development, usability, testing, design software, and project management. With a strong motivation for success, I am committed to creating professional and innovative web solutions that exceed expectations.</p>
           </div>
           <div className="intro-right">
             <img src="./image/myphoto.png" width="300" alt="me"></img>

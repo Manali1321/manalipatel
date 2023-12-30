@@ -48,14 +48,8 @@ class Project extends React.Component {
               <div className="project-one">
                 <h2>{item.title}</h2>
                 <p>{item.content}</p>
-                <div className="skill">Skill:
-                  {this.state.project_skill
-                    .filter(ps => ps.project_id === item.id)
-                    .map(ps => (
-                      <span>
-                        <img src={this.state.skill.find(s => s.id === ps.skill_id).image.replace("localhoststorage", "admin.codemanali.ca/storage") && item.image} width="50" alt="skill">
-                        </img></span>
-                    ))}
+                <div className="skill">Skills:
+                  {item.skill}
                 </div>
               </div>
               <div id="project-other" onMouseEnter={this.handleMouseEnter}>

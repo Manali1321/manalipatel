@@ -11,8 +11,12 @@ class About extends React.Component {
       const educationResponse = await fetch('https://admin.codemanali.ca/api/qualifications');
       const experienceData = await experienceResponse.json();
       const educationData = await educationResponse.json();
+
+      // Assuming there is an 'id' field in the response data
+      const sortedExperienceData = experienceData.sort((a, b) => a.id - b.id);
+
       this.setState({
-        experience: experienceData,
+        experience: sortedExperienceData,
         education: educationData
       });
     } catch (error) {

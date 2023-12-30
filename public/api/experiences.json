@@ -11,7 +11,7 @@
     "database": "example_app",
     "data": [
       {
-        "id": "1",
+        "id": "4",
         "title": "Civil Engineer",
         "company": "PACE Professional Services LTD.",
         "start": "2017 May",
@@ -22,7 +22,7 @@
         "updated_at": "2023-04-15 16:26:37"
       },
       {
-        "id": "2",
+        "id": "3",
         "title": "Supervisor",
         "company": "Pizza hut",
         "start": "2018 Oct",
@@ -33,12 +33,23 @@
         "updated_at": "2023-04-15 16:28:36"
       },
       {
-        "id": "3",
+        "id": "2",
         "title": "Technical sales Representative",
         "company": "S & P Data LLC",
         "start": "2019 Oct",
         "end": "2022 Aug",
         "detail": "Identifying, soliciting and promote sales to existing clients through upselling telecommunication products and services. Recommend appropriate service and package after carefully accessing customer’s needs and resources..",
+        "location": "Hamilton, Canada",
+        "created_at": "2023-04-14 19:38:32",
+        "updated_at": "2023-04-15 16:29:36"
+      },
+      {
+        "id": "1",
+        "title": "Front-end Developer",
+        "company": "Royal Bank Of Canada",
+        "start": "2023 Sept",
+        "end": "2023 Dec",
+        "detail": "Develop user interfaces for RBCDesign following Figma prototypes, specializing in crafting reusable components using React, Angular and SASS also Unit testing with Jest and Cypress tech stack that streamlined the workflow for front-end developer. Use Agile environment to handle JIRA tickets according scope, communication with cross-function teams and improved products and platform. Actively participate in peer code reviews to receive feedback to allow continuous improvement for programming, debugging issues and maintain legal standards. Duties included collaborate with cross-functional teams including Clients, UX/UI designers, Quality Assurance, Accessibility testing, web performance throughout execution.",
         "location": "Hamilton, Canada",
         "created_at": "2023-04-14 19:38:32",
         "updated_at": "2023-04-15 16:29:36"

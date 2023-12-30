@@ -79,7 +79,6 @@ footer {
 }
 .intro-left {
   letter-spacing: 3px;
-  text-align: center;
 }
 .intro-left h1 {
   font-size: 48px;
@@ -118,7 +117,9 @@ footer {
 .home-about-detail p {
   font-size: 14px;
 }
-
+.about-me {
+  text-align: left;
+}
 /* *********  About-intro *************** */
 .about-intro {
   display: flex;
